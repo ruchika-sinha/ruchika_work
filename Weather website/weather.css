@@ -1,0 +1,233 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat',arial;
+    /* font-family: 'Thasadith', sans-serif; */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Thasadith&display=swap'); */
+
+body{
+background-attachment: fixed;
+margin-bottom:100px;
+/* background-image: url("/img/background/background-backdrop-droplets-raindrop.jpg"); */
+background: #7b4397;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #dc2430, #7b4397);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #dc2430, #7b4397); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+background-size:cover;
+/* background-image: url("https://cdn.wallpapersafari.com/83/47/crXmjY.jpg"); */
+/* background-image: url("https://thewallpaper.co/wp-content/uploads/2020/08/background-images-love-amazing-nice-weather-sky-romance-high-resolution-widescreen-1920x1080-1.jpg"); */
+/* filter: blur(8px); */
+/* background-repeat: no-repeat; */
+height: 100vh;
+}
+
+.main{
+    width: 90%;
+    /* background-color: rgba(19, 19, 19, 0.603); */
+    margin: auto;
+    min-height: 150px;
+    margin-bottom: 150px;
+}
+.box-1{
+margin: auto;
+min-height: 70px;
+background-color: rgba(0, 0, 0, 0.521);
+margin-top: 50px;
+border-radius: 1rem;
+/* background-color: #85FFBD; */
+/* background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%); */
+border: 2px solid #ffffff;
+padding:20px;
+padding-top: 10px;
+box-shadow: 0px 5px 10px black;
+/* background-image: url("/img/background/top-bg.png"); */
+background-size: cover;
+box-shadow: 0 8px 6px -6px black;
+}
+.box-2{
+    color: white !important;
+border-radius: 1rem;
+margin: auto;
+min-height: 300px;
+background-color: rgba(0, 0, 0, 0.521);
+
+margin-top:30px;
+/* background-color: #ffffff27; */
+/* background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%); */
+border: 2px solid #ffffff;
+box-shadow: 0px 5px 10px black;
+/* background-image: url("/img/background/2942776.png"); */
+background-size: cover;
+/* box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24); */
+box-shadow: 0 8px 16px -6px black;
+}
+
+
+input{
+    font-size: 25px;
+    padding-left: 10px;
+    width:100%;
+    height: 100%;
+    border:none;
+    height: 50px;
+    background: none;
+    border-bottom:1px solid rgb(253, 253, 253);
+    outline: none;
+    text-align: center;
+    color: white;
+}
+input:focus{
+    border: none;
+    border-bottom:2px solid rgb(252, 251, 251);
+    color: rgb(252, 250, 250);
+    text-transform: capitalize;
+}
+input::placeholder{
+    color: rgba(255, 255, 255, 0.658);
+}
+
+#weatherImage{
+   height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: auto; */
+    margin-top: -45px;
+    margin-left:-50px;
+    /* box-shadow: 0px 0px 10px black; */
+    filter:drop-shadow(0px 0px 5px rgb(255, 255, 255));
+
+}
+.forecast-weatherImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20px;
+}
+#showTemp{
+    /* color:white; */
+    /* margin-top: -50px; */
+    text-shadow: 9px 13px 10px rgb(0, 0, 0);
+    transform: scale(1.3);
+    margin-left: 10px;
+}
+button{
+    width:100%
+}
+.col-md-8,.col-md-4{
+    /* border: 1px solid red; */
+}
+
+#cityname,.search-btn{
+    margin-top: 10px;
+}
+.search-btn{
+    border: none;
+    letter-spacing: 5px;
+
+/* border: 2px solid rgb(252, 252, 252); */
+/* background-color:#eb6e4b; */
+background: #FF512F;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #DD2476, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #DD2476, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* border-radius: 100px; */
+}
+.search-btn:hover{
+    /* background-color: #FFFB7D; */
+    /* background-color: #3e93d7; */
+    background: #FF512F;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #DD2476, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #DD2476, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+border: 2px solid rgb(252, 252, 252);
+transition: .5s;
+    box-shadow: 0px 0px 30px #eb6e4b;
+    letter-spacing:normal;
+}
+.inner-box1{
+    padding: 25px;
+}
+/* .forecast-box{
+    background-color: #FAACA8;
+    min-height: 300px;
+    border: 1px solid black;
+} */
+.inner-box1{
+    text-shadow: 0px 5px 5px rgb(0, 0, 0);
+
+}
+
+#weatherDisc{
+    text-align: center;
+    /* text-shadow: 0px 5px 5px rgb(248, 247, 247); */
+
+}
+#cityName , #showDiscription{
+    text-shadow: 0px 5px 5px rgb(0, 0, 0);
+
+}
+/* 
+.refresh{
+    position: relative;
+    height: 50px;
+    width: 100px;
+    background-color:#ffffff;
+    border: 2px solid #DD2476;
+    border-left: none;
+    position: fixed;
+    bottom:50px;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 5px 5px 20px white;
+    cursor: pointer;
+}
+.refresh .fa-sync{
+     position:absolute;
+    top:45%;
+    left:45%;
+    color: #DD2476;
+    font-size:25px;
+    text-align: center;
+} */
+
+.dev-info{
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+}
+#profile-image-mayur{
+    position:absolute;
+    left:calc(50% - 50px);
+    width: 100px;
+    border-radius: 100%;
+    border:3px solid white;
+    filter:drop-shadow(0px 0px 15px rgb(0, 0, 0));
+    
+}
+
+/* custom scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+/* border: 2px solid #DD2476; */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  /* background: #555; */
+   background: #FF512F;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #DD2476, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #DD2476, #FF512F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
