@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eCommerce Website</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- JQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="ecommercestyle.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">MyShop</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#products">Products</a>
+          </li>
+        </ul>
+        <<form class="d-flex">
+          <input class="form-control me-2 animated-search" type="search" placeholder="Search">
+          
+        </form>
+    </div>
+    <script src="ecommercescript.js"></script>
+  </body>
+</html>
+
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#login" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#register" data-bs-toggle="modal" data-bs-target="#registerModal">Register</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <div id="home" class="container mt-5">
+    <h1>Welcome to MyShop</h1>
+    <p>Explore our amazing products!</p>
+  </div>
+
+  <!-- Product Grid -->
+  <div id="products" class="container mt-5">
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card product-card">
+        <img src="https://i.postimg.cc/MHv7KJYp/access.webp" class="card-img-top" alt="Product 2">
+          <div class="card-body">
+            <h5 class="card-title">Product 2</h5>
+            <p class="card-text">2999 rs.</p>
+            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+</div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card product-card">
+          <img src="https://i.postimg.cc/8CmBZH5N/shoes.webp" class="card-img-top" alt="Product 2">
+          <div class="card-body">
+            <h5 class="card-title">Product 2</h5>
+            <p class="card-text">2999 rs.</p>
+            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card product-card">
+          <img src="https://i.postimg.cc/Xqmwr12c/clothing.webp" class="card-img-top" alt="Product 3">
+          <div class="card-body">
+            <h5 class="card-title">Product 3</h5>
+            <p class="card-text">3999 rs.</p>
+            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Checkout Section -->
+  <div id="checkout" class="container mt-5">
+  <h2>Checkout</h2>
+  <form>
+    <div class="mb-3">
+      <label for="name" class="form-label">Full Name</label>
+      <input type="text" class="form-control" id="name" required>
+    </div>
+    <div class="mb-3">
+      <label for="address" class="form-label">Address</label>
+      <input type="text" class="form-control" id="address" required>
+    </div>
+    <div class="mb-3">
+      <label for="card" class="form-label">Card Number</label>
+      <input type="text" class="form-control" id="card" required>
+    </div>
+    <!-- Animated Order Button -->
+    <button class="order" type="button">
+      <span class="default">Place Order</span>
+      <span class="success">Order Placed
+        <svg viewbox="0 0 12 10">
+          <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+        </svg>
+      </span>
+      <div class="box"></div>
+      <div class="truck">
+        <div class="back"></div>
+        <div class="front">
+          <div class="window"></div>
+        </div>
+        <div class="light top"></div>
+        <div class="light bottom"></div>
+      </div>
+      <div class="lines"></div>
+    </button>
+  </form>
+</div>
+
+  <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="loginEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="loginEmail" required>
+            </div>
+            <div class="mb-3">
+              <label for="loginPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="loginPassword" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Login</button>
+          </form>
+          <p class="text-center mt-3">Don't have an account? <a href="#register" data-bs-toggle="modal" data-bs-target="#registerModal">Register</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Register Modal -->
+  <div class="modal fade" id="registerModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Register</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="registerName" class="form-label">Name</label>
+              <input type="text" class="form-control" id="registerName" required>
+            </div>
+            <div class="mb-3">
+              <label for="registerEmail" class="form-label">Email</label>
+              <input type="email" class="form-control" id="registerEmail" required>
+            </div>
+            <div class="mb-3">
+              <label for="registerPassword" class="form-label">Password</label>
+              <input type="password" class="form-control" id="registerPassword" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Register</button>
+          </form>
+          <p class="text-center mt-3">Already have an account? <a href="#login" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2025 MyShop. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="ecommercescript.js"></script>
+</body>
+</html>
